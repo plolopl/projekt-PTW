@@ -8,7 +8,6 @@
     src: url('inter.ttc') format('truetype');
 }  
 
-/* Nagłówek strony */
 header {
     font-size: 40px;
     background-image:url(tlo3.jpg);
@@ -35,11 +34,10 @@ header p {
     font-size: 1.2em;
     margin-top: 10px;
 }
-/* Ogólne ustawienia strony */
 body {
-    background-color: #c9ced5; /* Jasne, przyjazne tło */
-    color: #333; /* Tekst w odcieniach szarości */
-    font-family: 'Merriweather', serif; /* Styl blogowy */
+    background-color: #c9ced5;
+    color: #333; 
+    font-family: 'Merriweather', serif; 
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -53,26 +51,26 @@ body {
 .more{
     text-align: right;
 }
-/* Kolumna z filtrami po lewej stronie */
+
 .filter-column {
     width: 20%;
     padding-right: 20px;
 }
 
-/* Zawartość po prawej: wyszukiwanie i lista rajdów */
+
 .content-area {
-    width: 80%; /* Zajmuje większość miejsca */
+    width: 80%; 
 }
 
-/* Pasek wyszukiwania */
+
 .search-bar {
     display: flex;
-    justify-content: space-between; /* Pole wyszukiwania na pełną szerokość */
+    justify-content: space-between; 
     margin-bottom: 20px;
 }
 
 .search-bar input[type="text"] {
-    width: 80%; /* Długie pole wyszukiwania */
+    width: 80%; 
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px 0 0 5px;
@@ -108,7 +106,7 @@ body {
     cursor: pointer;
     text-align: center;
     display: flex;
-    justify-content: space-between; /* Pole wyszukiwania na pełną szerokość */
+    justify-content: space-between; 
     margin-bottom: 20px;
 }
 .szczeg{
@@ -118,7 +116,7 @@ body {
         color: rgb(0, 0, 0);
         border-radius: 0 5px 5px 0;
         text-align: center;
-        justify-content: space-between; /* Pole wyszukiwania na pełną szerokość */
+        justify-content: space-between; 
         margin-bottom: 20px;
     
 }
@@ -128,53 +126,52 @@ body {
 .filter-column {
     padding: 20px;
     font-family: 'Merriweather', serif;
-    color: #000000; /* Biały tekst */
-    transition: transform 0.3s ease; /* Delikatna animacja */
+    color: #000000;
+    transition: transform 0.3s ease; 
 }
 
 
 .filtry form {
     display: flex;
-    flex-direction: column; /* Elementy ułożone w kolumnie */
-    gap: 15px; /* Odstępy między elementami */
+    flex-direction: column;
+    gap: 15px; 
 }
 
-/* Styl dla elementów formularza */
 .filter-column select,
 .filter-column input[type="submit"] {
     padding: 10px;
     border-radius: 10px;
     border: none;
     font-size: 16px;
-    width: 100%; /* Szerokość na całą sekcję */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtelne cienie */
+    width: 100%; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
-/* Styl dla pola select */
+
 .filter-column select {
-    background-color: rgba(255, 255, 255, 0.9); /* Przezroczyste tło */
-    color: #333; /* Ciemny kolor tekstu */
+    background-color: rgba(255, 255, 255, 0.9); 
+    color: #333; 
     cursor: pointer;
 }
 
 .filter-column select:hover {
-    background-color: rgba(255, 255, 255, 1); /* Pełne tło przy najechaniu */
+    background-color: rgba(255, 255, 255, 1); 
 }
 
-/* Styl dla przycisku wysyłania */
+
 .filter-column input[type="submit"] {
-    background-color:#1e90ff;/* Wyrazisty kolor */
+    background-color:#1e90ff;
     color: white;
     font-weight: bold;
     cursor: pointer;
 }
 
 .filter-column input[type="submit"]:hover {
-    background-color: #60a3bc; /* Zmiana koloru przy najechaniu */
-    transform: translateY(-3px); /* Delikatne uniesienie przycisku */
+    background-color: #60a3bc; 
+    transform: translateY(-3px); 
 }
 
-/* Animacje */
+
 @keyframes glow {
     0% {
         box-shadow: 0 0 10px #38ada9;
@@ -187,7 +184,7 @@ body {
     }
 }
 
-/* Styl dla pola wyboru przy najechaniu */
+
 .filter-column select:hover, .filter-column input[type="submit"]:hover {
     animation: glow 1s infinite alternate;
 }
@@ -233,7 +230,7 @@ nav a:hover {
     color: #f4f4f9;
 }
 
-/* Sekcja powitalna */
+
 p {
     font-size: 1.2em;
     text-align: center;
@@ -242,7 +239,7 @@ p {
     color: #fff;
     display: inline;
 }
-/* Lista rajdów */
+
 .rajd-list {
     display: flex;
     flex-direction: column;
@@ -253,7 +250,7 @@ p {
     transform: translateY(-5px);
 }
 
-/* Ikony rajdu i strefy */
+
 .rajd-item img {
     
     height: 70px;
@@ -270,7 +267,7 @@ p {
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s;
-    gap: 20px; /* Odstęp między elementami */
+    gap: 20px; 
 }
 .rajdulu {
     
@@ -299,14 +296,14 @@ p {
 .rajd-info {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Rozmieszcza elementy równomiernie */
+    justify-content: space-between;
     width: 100%;
 }
 
 .rajd-details {
     display: flex;
     align-items: center;
-    gap: 20px; /* Odstęp między tekstowymi elementami */
+    gap: 20px;
 }
 
 .rajd-details h4, .rajd-details p, .rajd-details span {
@@ -319,7 +316,7 @@ p {
     color: #666;
     font-size: 1em;
 }
-/* Formularz wyszukiwania */
+
 form {
     text-align: center;
     margin-top: 20px;
@@ -351,7 +348,7 @@ input[type="submit"]:hover {
     background-color: #1c7ed6;
 }
 
-/* Link dodawania produktu */
+
 .add-product-link {
     display: block;
     margin-top: 30px;
@@ -367,26 +364,26 @@ input[type="submit"]:hover {
     text-decoration: underline;
 }
 .floating-button {
-    position: fixed; /* Ustawia pozycję względem okna przeglądarki */
-    right: 20px; /* Odstęp od prawej krawędzi */
-    bottom: 20px; /* Odstęp od dolnej krawędzi */
-    width: 50px; /* Szerokość przycisku */
-    height: 50px; /* Wysokość przycisku */
-    background-color: #1e90ff; /* Kolor tła */
-    color: white; /* Kolor ikony plusa */
-    border-radius: 50%; /* Okrągły kształt */
-    text-align: center; /* Wyśrodkowanie tekstu */
-    font-size: 30px; /* Rozmiar plusa */
-    line-height: 50px; /* Wyśrodkowanie tekstu w pionie */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Dodanie cienia dla efektu uniesienia */
-    cursor: pointer; /* Zmiana kursora na wskaźnik */
-    text-decoration: none; /* Usunięcie podkreślenia z linku */
-    z-index: 1000; /* Zapewnia, że przycisk będzie nad innymi elementami */
-    transition: background-color 0.3s ease; /* Efekt przejścia przy najechaniu */
+    position: fixed; 
+    right: 20px; 
+    bottom: 20px; 
+    width: 50px; 
+    height: 50px; 
+    background-color: #1e90ff; 
+    color: white; 
+    border-radius: 50%; 
+    text-align: center; 
+    font-size: 30px; 
+    line-height: 50px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    cursor: pointer; 
+    text-decoration: none; 
+    z-index: 1000; 
+    transition: background-color 0.3s ease;
 }
 
 .floating-button:hover {
-    background-color: #1c7ed6; /* Zmiana koloru tła po najechaniu */
+    background-color: #1c7ed6; 
 }
 h1{
     text-align: center;
@@ -435,9 +432,9 @@ select:focus {
 }
 
 textarea {
-    resize: vertical; /* Pozwala na zmianę rozmiaru tekstowego pola */
+    resize: vertical; 
 }
-/* Stopka */
+
 footer {
     background-color: #333;
     color: #fff;
